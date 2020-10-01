@@ -9,13 +9,13 @@ In this project, we will work on an end-to-end computer vision (CV) system: a mi
 
 ### Example of Training and Test
 
+1. YOLO based Models
+     [src/training_object_detector_yolo3.ipynb](src/training_object_detector_yolo3.ipynb) and [src/test_object_detector_yolo3.ipynb](src/test_object_detector_yolo3.ipynb) (Yolo3, Recommended)
 
-#### YOLO based Models
-See [src/training_object_detector_yolo3.ipynb](src/training_object_detector_yolo3.ipynb) and [src/test_object_detector_yolo3.ipynb](src/test_object_detector_yolo3.ipynb) (Yolo3, Recommended)
+1. SSD based Models
+     [src/training_object_detector.ipynb](src/training_object_detector.ipynb) and [src/test_object_detector.ipynb](src/test_object_detector.ipynb) (SSD)
 
-#### SSD based Models
-Or see [src/training_object_detector.ipynb](src/training_object_detector.ipynb) and [src/test_object_detector.ipynb](src/test_object_detector.ipynb) (SSD)
-
+### Testing Results
 After the training, your model should be able to detect the objects such as "noodles", "hand", etc.
 
 <img height="200" alt="portfolio_view" src="images/demo/demo2.png">
