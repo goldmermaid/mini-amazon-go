@@ -16,6 +16,12 @@ See [src/training_object_detector_yolo3.ipynb](src/training_object_detector_yolo
 #### SSD based Models
 Or see [src/training_object_detector.ipynb](src/training_object_detector.ipynb) and [src/test_object_detector.ipynb](src/test_object_detector.ipynb) (SSD)
 
+After the training, your model should be able to detect the objects such as "noodles", "hand", etc.
+
+<img height="200" alt="portfolio_view" src="images/demo/demo2.png">
+
+
+
 
 
 
