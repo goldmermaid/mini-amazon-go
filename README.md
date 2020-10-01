@@ -5,7 +5,7 @@ An [unmanned store](https://en.wikipedia.org/wiki/Unmanned_store) is a retail co
 In this project, we will work on an end-to-end computer vision (CV) system: a mini Unmanned Store. Our system is able to automaticly detect whether any object is grabbed from a shelf in a real-time fashion.
 
 
-## Getting Started
+## I. Getting Started
 
 ### Example of Training and Test
 
@@ -19,7 +19,7 @@ Or see [src/training_object_detector.ipynb](src/training_object_detector.ipynb) 
 
 
 
-## Computer Vision Hackathon: Mini Amazon Go
+## II. Computer Vision Hackathon: Mini Amazon Go
 
 ### Date: 2019.10
 
