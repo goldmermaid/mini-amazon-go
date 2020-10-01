@@ -1,3 +1,6 @@
+# Ignore all trained models
+*.params
+
 # User defined
 .DS_Store
 
