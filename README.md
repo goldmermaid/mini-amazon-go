@@ -19,6 +19,9 @@ Or see [src/training_object_detector.ipynb](src/training_object_detector.ipynb) 
 After the training, your model should be able to detect the objects such as "noodles", "hand", etc.
 
 <img height="200" alt="portfolio_view" src="images/demo/demo2.png">
+<img height="200" alt="portfolio_view" src="images/demo/demo3.png">
+<img height="200" alt="portfolio_view" src="images/demo/demo4.png">
+<img height="200" alt="portfolio_view" src="images/demo/demo5.png">
 
 
 
