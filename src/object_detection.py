@@ -8,11 +8,12 @@ import mxnet as mx
 from gluoncv import model_zoo, data, utils
 
 class ObjectDetection():
-
     def __init__(self):
         self.classes = ['cocacola', 'juice', 'noodles', 'hand']  # , 'cocacola-zero'
-        #self.net = model_zoo.get_model('ssd_512_resnet50_v1_custom', classes=self.classes, pretrained_base=False)
-        self.net = model_zoo.get_model('yolo3_darknet53_custom', classes=self.classes, pretrained_base=False)
+        self.net = model_zoo.get_model('ssd_512_resnet50_v1_custom', 
+                                       classes=self.classes, pretrained_base=False)
+#         self.net = model_zoo.get_model('yolo3_darknet53_custom', 
+#                                        classes=self.classes, pretrained_base=False)
         param_files = ([x for x in os.listdir('.') if x.endswith('.params')])
         selected = param_files[0]
         self.net.load_parameters(selected)
@@ -20,8 +21,6 @@ class ObjectDetection():
         self.net.collect_params().reset_ctx(self.ctx)
 
     def detect(self, filename):
-        # x, img = data.transforms.presets.ssd.load_test(filename, short=512)
-        # x, img = data.transforms.presets.ssd.transform_test([mx.nd.array(cv2.imread(filename))], short=512)
         img = cv2.imread(filename)
         img = cv2.resize(img, (512, 512))
         x = self.transform_image(img)
